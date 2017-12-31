@@ -18,5 +18,14 @@ public class PageController {
     public String pricingTables() {
         return "pricing-tables";
     }
-
+    
+    @GetMapping("/logins")
+    public String login() 
+    {
+    	return "logins";
+    }
+    @GetMapping("/access-denied")
+    public String accessDenied() {
+        return "access-denied";
+    }
 }
